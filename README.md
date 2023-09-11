@@ -19,6 +19,7 @@ Até o commit "Piscina 42SP agosto 2023" (hash "6575177fbf094eabaeeb4915c5296ba5
 No entanto, existem exceções:
 
 - **C00**:
-  - ex06, ex07 e ex08 não foram enviados para correção.
+  - ex06 e ex07 não foram enviados para correção.
+  - ex08 não foi concluído.
 - **C04**:
   - ex04 não foi concluído.

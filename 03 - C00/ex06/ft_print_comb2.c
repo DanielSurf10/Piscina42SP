@@ -6,7 +6,7 @@
 /*   By: danbarbo <danbarbo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 18:10:12 by danbarbo          #+#    #+#             */
-/*   Updated: 2023/08/23 14:18:05 by danbarbo         ###   ########.fr       */
+/*   Updated: 2023/09/10 23:42:10 by danbarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ void	ft_putnumber(int num1, int num2)
 	ft_putchar(' ');
 	ft_putchar('0' + num2 / 10);
 	ft_putchar('0' + num2 % 10);
-	write(1, ", ", 2);
+	if (num1 != 98)
+		write(1, ", ", 2);
 }
 
 void	ft_print_comb2(void)
