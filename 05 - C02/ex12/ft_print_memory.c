@@ -6,7 +6,7 @@
 /*   By: danbarbo <danbarbo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 14:33:02 by danbarbo          #+#    #+#             */
-/*   Updated: 2023/09/13 21:40:43 by danbarbo         ###   ########.fr       */
+/*   Updated: 2023/09/13 22:22:47 by danbarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,28 +86,12 @@ void	*ft_print_memory(void *addr, unsigned int size)
 {
 	unsigned int	i;
 	unsigned int	count_print;
-// 	unsigned char	*addr_char;
-//
-// 	addr_char = (unsigned char *)(addr);
+
 	i = 0;
 	if (size % 2 != 0)
 		size++;
 	while (i < size)
-	{
 		print_data(&addr, &i);
-		// if (i % 16 == 0)
-		// {
-		// 	print_adress(addr);
-		// 	write(1, ": ", 2);
-		// 	addr += 16;
-		// }
-		// print_hex(addr_char[i]);
-		// if (i % 2 != 0)
-		// 	write(1, " ", 1);
-		// i++;
-		// if (i % 16 == 0)
-		// 	ft_putstr((unsigned char *) addr - 16, 16);
-	}
 	if (i % 16 != 0)
 	{
 		count_print = i;
