@@ -6,7 +6,7 @@
 /*   By: danbarbo <danbarbo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 14:33:02 by danbarbo          #+#    #+#             */
-/*   Updated: 2023/09/13 22:22:47 by danbarbo         ###   ########.fr       */
+/*   Updated: 2023/09/13 22:29:59 by danbarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,5 @@ void	*ft_print_memory(void *addr, unsigned int size)
 		}
 		ft_putstr((unsigned char *) addr - 16, count_print % 16);
 	}
-	return (0);
+	return (addr);
 }
