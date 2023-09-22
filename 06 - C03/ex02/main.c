@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danbarbo <danbarbo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/29 13:35:17 by danbarbo          #+#    #+#             */
-/*   Updated: 2023/09/22 14:29:25 by danbarbo         ###   ########.fr       */
+/*   Created: 2023/09/22 13:25:00 by danbarbo          #+#    #+#             */
+/*   Updated: 2023/09/22 13:35:09 by danbarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
-{
-	char	*first;
-	int		i;
-	int		i_str;
+#include <stdio.h>
+#include "ft_strcat.c"
 
-	first = str;
-	i = 0;
-	i_str = 0;
-	while (str[i_str] != '\0' && to_find[i] != '\0')
-	{
-		if (str[i_str] == to_find[i])
-		{
-			if (first == 0)
-				first = &str[i_str];
-			i++;
-		}
-		else
-		{
-			i = 0;
-			first = 0;
-		}
-		i_str++;
-	}
-	if (to_find[i] == '\0')
-		return (first);
-	return (&str[i_str]);
+int	main(void)
+{
+	char	dest[10] = {"Bom "};
+	char	scr[] = {"Dia"};
+
+	printf("%s\n", ft_strcat(dest, scr));
+
+
+	return (0);
 }
